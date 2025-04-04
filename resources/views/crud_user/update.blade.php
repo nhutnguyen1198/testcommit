@@ -206,6 +206,20 @@ td {
                 @endif
             </div>
             <div>
+                <input type="text" placeholder="diachi" id="diachi" class="form-control"
+                    value="{{ $user->diachi }}" name="diachi" required autofocus>
+                @if ($errors->has('diachi'))
+                    <span class="text-danger">{{ $errors->first('diachi') }}</span>
+                @endif
+            </div>
+            <div>
+                <input type="text" placeholder="sdt" id="sdt" class="form-control"
+                    value="{{ $user->sdt }}" name="sdt" required autofocus>
+                @if ($errors->has('sdt'))
+                    <span class="text-danger">{{ $errors->first('sdt') }}</span>
+                @endif
+            </div>
+            <div>
                 <input type="password" placeholder="Password" id="password" class="form-control" name="password"
                     required>
                 @if ($errors->has('password'))
